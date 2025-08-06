@@ -1,0 +1,95 @@
+.stadium-container {
+  padding: 20px;
+}
+
+.stadium-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.stadium-filters input[type="text"],
+.stadium-filters select {
+  padding: 6px 10px;
+  font-size: 14px;
+}
+
+.capacity-range label {
+  display: block;
+  font-size: 12px;
+}
+
+.stadium-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 16px;
+}
+
+.stadium-card {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.stadium-card img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.pagination {
+  margin-top: 16px;
+  text-align: center;
+}
+
+.pagination button {
+  margin: 0 6px;
+  padding: 6px 12px;
+  font-weight: bold;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
+  position: relative;
+  text-align: center;
+}
+
+.modal-content img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.close-button {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  font-size: 18px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}

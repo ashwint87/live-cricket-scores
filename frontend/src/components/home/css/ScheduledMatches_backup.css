@@ -1,0 +1,167 @@
+.scheduled-matches-container {
+  font-family: 'Inter', sans-serif;
+}
+
+.schedule-tabs {
+  display: flex;
+  gap: 10px;
+}
+
+.subheader {
+  font-size: 18px;
+  margin: 24px 0 12px;
+  color: #222;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 4px;
+}
+
+.match-type-tag {
+  display: inline-block;
+  background-color: #636e72;
+  color: white;
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 12px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: fit-content;
+}
+
+.schedule-tabs button {
+  padding: 8px 16px;
+  font-weight: bold;
+  border: 1px solid #ddd;
+  background-color: #f8f8f8;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.schedule-tabs button.active {
+  background: linear-gradient(90deg, #f94a0b, #ff2750);
+  color: white;
+}
+
+.score-text span {
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.schedule-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #081f34;
+  padding: 60px;
+  border-radius: 24px;
+}
+
+.team-score-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px 0;
+}
+
+.team-name {
+  display: flex;
+  align-items: center;
+}
+
+.match-card:hover {
+  transform: translateY(-4px);
+}
+
+.match-header h4 {
+  margin: 0;
+  font-weight: bold;
+}
+
+.venue {
+  color: #666;
+  font-size: 12px;
+}
+
+.teams {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 12px 0;
+}
+
+.team {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.team img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.team span {
+  margin-top: 4px;
+  font-weight: 600;
+}
+
+.score p {
+  font-weight: 500;
+  margin: 4px 0;
+}
+
+.status {
+  margin-top: 8px;
+  color: #333;
+  font-size: 16px;
+}
+
+.series-link {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 14px;
+  color: linear-gradient(90deg, #f94a0b, #ff2750);
+  text-decoration: underline;
+}
+
+.flag-icon {
+  width: 18px;
+  height: 12px;
+  margin: 0 6px;
+  vertical-align: middle;
+  object-fit: contain;
+}
+
+.schedule-header {
+  position: relative;
+}
+
+.schedule-header h3 {
+  font-size: 36px;
+  font-weight: bold;
+  display: flex;
+  gap: 10px;
+}
+
+.schedule-view-all {
+  margin-right: 5px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 13px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  background: #00cfff;
+  padding: 6px 14px;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  white-space: nowrap;
+  transition: all 0.3s ease;
+}
+
+.schedule-view-all:hover {
+  background: #ffffff;
+  color: #00cfff;
+  border: 1px solid #00cfff;
+}

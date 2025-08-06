@@ -1,0 +1,39 @@
+.team-matches-page {
+  padding: 20px;
+}
+
+.tabs {
+  margin-bottom: 20px;
+}
+
+.tabs button {
+  margin-right: 10px;
+  padding: 6px 12px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background: #f0f0f0;
+  cursor: pointer;
+}
+
+.tabs button.active {
+  background: linear-gradient(90deg, #f94a0b, #ff2750);
+  color: white;
+  border-color: linear-gradient(90deg, #f94a0b, #ff2750);
+}
+
+.matches-grid {
+  display: grid;
+  gap: 12px;
+}
+
+.match-list {
+  display: ruby;
+}
+
+.flag-icon {
+  width: 18px;
+  height: 12px;
+  margin: 0 6px;
+  vertical-align: middle;
+  object-fit: contain;
+}

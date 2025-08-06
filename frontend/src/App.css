@@ -1,0 +1,36 @@
+:root {
+  --card-bg: #ffffff;
+  --text-color: #000000;
+  --highlight: linear-gradient(to right, #f857a6, #ff5858);;
+  --accent: #d9534f;
+  --muted: #555555;
+  --shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  --btn-bg: #f0f0f0;
+  --btn-bg-hover: #dcdcdc;
+  --btn-text: #000000;
+}
+
+body.dark {
+  --card-bg: #1e1e1e;
+  --text-color: #ffffff;
+  --highlight: #66b2ff;
+  --accent: #ff6b6b;
+  --muted: #cccccc;
+  --shadow: 0 2px 6px rgba(255, 255, 255, 0.1);
+  --btn-bg: #333333;
+  --btn-bg-hover: #444444;
+  --btn-text: #ffffff;
+}
+
+body {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden; /* prevents full-page scroll */
+}

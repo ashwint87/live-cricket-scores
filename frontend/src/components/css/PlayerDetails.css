@@ -1,0 +1,68 @@
+.player-details {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.player-header {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.player-header img {
+  width: 140px;
+  height: 140px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.career-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.career-table th,
+.career-table td {
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  text-align: center;
+}
+
+.career-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+
+.player-details {
+  max-width: 800px;
+  margin: auto;
+  font-family: sans-serif;
+}
+
+.player-header {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.player-header img {
+  width: 120px;
+  height: 120px;
+  border-radius: 8px;
+}
+
+.stats-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.stats-table th, .stats-table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+

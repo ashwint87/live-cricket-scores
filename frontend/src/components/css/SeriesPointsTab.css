@@ -1,0 +1,22 @@
+.points-table {
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+.points-table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.points-table th,
+.points-table td {
+  padding: 8px 10px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+.points-table td img {
+  vertical-align: middle;
+  margin-right: 6px;
+}

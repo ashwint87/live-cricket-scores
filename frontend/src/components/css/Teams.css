@@ -1,0 +1,33 @@
+.teams-page {
+  padding: 20px;
+}
+
+.teams-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.team-card {
+  width: 120px;
+  text-align: center;
+  background: white;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+  background-color: #081f34;
+  color: white;
+}
+
+.team-card:hover {
+  box-shadow: 0 0 6px rgba(0,0,0,0.2);
+}
+
+.team-card img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 8px;
+}

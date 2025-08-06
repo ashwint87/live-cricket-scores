@@ -1,0 +1,227 @@
+.live-matches-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.match-card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 28px;
+  width: 420px;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  margin: 12px;
+  scroll-snap-align: start;
+}
+
+.match-card:hover {
+  transform: translateY(-3px);
+}
+
+.match-header {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 6px;
+}
+
+.status-label {
+  text-transform: uppercase;
+}
+
+.status-label.result {
+  color: #666;
+}
+
+.status-label.live {
+  color: linear-gradient(to right, #f857a6, #ff5858);
+}
+
+.status-label.upcoming {
+  color: #1e88e5;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background: #999;
+  border-radius: 50%;
+  margin: 0 8px;
+}
+
+.team-block {
+  background: #e9eff2;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.team-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 6px 0;
+}
+
+.team-name {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 14px;
+  color: #111;
+}
+
+.team-name-right {
+  display: flex;
+  align-items: right;
+  font-weight: 600;
+  font-size: 14px;
+  color: #111;
+}
+
+.flag-icon {
+  width: 20px;
+  height: 14px;
+  margin-right: 6px;
+  object-fit: cover;
+}
+
+.score {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.status-note {
+  position: relative;
+  overflow: hidden;
+  background: #e9eff2;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #222;
+}
+
+.scrolling-text {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marqueeScroll 10s linear infinite;
+}
+
+@keyframes marqueeScroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.status-note.live {
+  color: #1b5e20;
+}
+
+.status-note.result {
+  color: #388e3c;
+}
+
+.status-note.upcoming {
+  color: #444;
+  text-align: center;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  margin-top: 8px;
+  font-weight: 900;
+  color: #222;
+}
+
+.scrolling-text:hover {
+  animation-play-state: paused;
+}
+
+.match-subtitle {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 4px;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.location-icon {
+  width: 14px;
+  height: 18px;
+  flex-shrink: 0;
+  display: inline-block;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='%23e53935' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M12 2C8.14 2 5 5.14 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.86-3.14-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5 14.5 7.62 14.5 9 13.38 11.5 12 11.5z'/></svg>");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 2px;
+  vertical-align: middle;
+}
+
+.location-link {
+  display: inline-flex;
+  align-items: center;
+  color: black;
+  text-decoration: none;
+}
+
+.vs-text {
+  font-size: 16px;
+  font-weight: bold;
+  color: #e53935;
+  padding: 0 80px;
+}
+
+.match-venue-wrapper {
+  position: relative;
+  display: inline-block;
+  max-width: 260px;
+  line-height: 1.2;
+}
+
+.match-venue {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  max-width: 100%;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.2;
+  vertical-align: middle;
+}
+
+/* Tooltip only when not TBD */
+.match-venue-wrapper:not([data-fullname="TBD"]):hover::after {
+  content: attr(data-fullname);
+  position: absolute;
+  top: 130%;
+  left: 0;
+  background: #333;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  white-space: normal;
+  font-size: 0.85rem;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  max-width: 300px;
+  pointer-events: none;
+}

@@ -1,0 +1,76 @@
+.match-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.team {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.team-flag {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.team-name {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.vs {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 8px;
+}
+
+.match-details-container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+  background: #f7f9fc;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.back-button {
+  margin-bottom: 20px;
+  background: #0077cc;
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.back-button:hover {
+  background: #005fa3;
+}
+
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.tab-button {
+  padding: 10px 16px;
+  border: none;
+  background-color: #e1e4e8;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.tab-button.active {
+  background: linear-gradient(90deg, #f94a0b, #ff2750);
+  color: white;
+}

@@ -1,0 +1,126 @@
+.home-container {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.home-section {
+  flex: 3;
+}
+
+.side-widgets {
+  flex: 1;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.score p {
+  font-size: 14px;
+  margin: 2px 0;
+}
+
+.series-match-cards-row {
+  display: ruby;
+  overflow-x: auto;
+  gap: 22px;
+  padding: 50px;
+}
+
+.match-card .match-header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.match-type-header {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 20px 10px 10px 10px;
+  border-left: 4px solid #1976d2;
+  padding-left: 10px;
+  color: #1976d2;
+}
+
+.team-score-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px 0;
+}
+
+.team-name {
+  display: flex;
+  align-items: center;
+}
+
+.team-name img {
+  width: 20px;
+  height: 20px;
+  margin-right: 6px;
+}
+
+.score-text span {
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.series-line {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.match-card:hover {
+  transform: scale(1.03);
+}
+
+.teams {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.team {
+  display: flex;
+  align-items: center;
+  width: 48%;
+}
+
+.team img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  margin-bottom: 5px;
+}
+
+.status {
+  font-size: 16px;
+  color: #444;
+  margin-top: 6px;
+}
+
+.score {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.series-link {
+  font-size: 12px;
+  color: #0077cc;
+  display: inline-block;
+  margin-top: 4px;
+  text-decoration: none;
+}
+
+.match-meta {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 20px;
+}

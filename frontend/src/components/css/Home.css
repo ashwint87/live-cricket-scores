@@ -1,0 +1,128 @@
+.home-container {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  padding: 20px;
+  font-family: 'Inter', sans-serif;
+  overflow: hidden;
+}
+
+.home-section {
+  flex: 3;
+  overflow: hidden;
+}
+
+.side-widgets {
+  flex: 1;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.score p {
+  font-size: 14px;
+  margin: 2px 0;
+}
+
+.match-cards-row {
+  display: flex;
+  overflow-x: auto;
+  gap: 22px;
+  background-color: #06253A;
+  padding: 5px;
+  justify-content: flex-start;
+  scroll-behavior: smooth;
+}
+
+.match-cards-row::-webkit-scrollbar {
+  height: 6px;
+}
+
+.match-cards-row::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 10px;
+}
+
+.series-match-cards-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #06253A;
+  padding: 50px;
+}
+
+.team-score-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px 0;
+}
+
+.score-text span {
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.series-line {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.teams {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.team {
+  display: flex;
+  align-items: center;
+  width: 48%;
+}
+
+.team img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  margin-bottom: 5px;
+}
+
+.status {
+  font-size: 16px;
+  color: #444;
+  margin-top: 6px;
+}
+
+.series-link {
+  font-size: 12px;
+  color: #0077cc;
+  display: inline-block;
+  margin-top: 4px;
+  text-decoration: none;
+}
+
+.match-meta {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.gradient-link {
+  font-weight: 700;
+  font-size: 16px;
+  background: linear-gradient(90deg, #f94a0b, #ff2750);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.gradient-link:hover {
+  opacity: 0.8;
+}
